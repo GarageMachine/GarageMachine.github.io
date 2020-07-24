@@ -1,0 +1,387 @@
+.corpo{
+    background-color: #1f1d1d;
+}
+header{
+    background-color: #1f1d1d;
+}
+.cabecalho *{
+    background-color: #1f1d1d;
+}
+
+.topo{
+    position: fixed;
+}
+/*Estilizando div que contém endereço*/
+header .end{
+    width:20%;/**/
+    margin: 10px 0 0 10px;
+    text-align: center;
+    color: #e6e1e1;
+}
+
+header .end ul{
+    display: block;
+}
+
+header .end ul li{
+    padding: 3px;/**/
+    background-color: #4e4e4e;
+    font-size: 80%;/**/
+    font-family: Agency FB Bold Condensed;
+}
+
+/*aplicando CSS a logo*/
+header .img{
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+header .img img{
+    height:100px;
+}
+
+/*Aplicando CSS a login*/
+header .login{
+    margin-left: 70%;
+    cursor:pointer;
+
+}
+header .login p{
+    font-size: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    color: #e6e1e1;
+    text-decoration: underline;
+}
+
+header .login img{
+    height:70px;
+}
+
+/*css modal*/
+.cadastro{
+    background-color: #4e4e4e;
+    color: #ffffff;
+    border-left: 3px solid #000000;
+}
+
+.cadastro:first-child{ 
+	border-left:none; 
+}
+
+/*Aplicando CSS a botaõ 24h*/
+header .sos{
+    width: 20%;
+    background-color: #020d51;
+    margin: 0 10px 0 0;
+    float: right;
+    text-align: center;
+    color: #e6e1e1;
+    padding: 8px;
+    font-family: Agency FB Bold Condensed;
+    font-size: 250%;
+}
+
+header .sos:hover{
+    background-color: #021279;
+    color: #ffffff;
+}
+/*formatando barra de pesquisa*/
+header form .pesquisar{
+    margin: 0 auto;
+    width: 25%;
+}
+
+header form .pesquisar ul{
+    display: inline;
+}
+
+header form .pesquisar ul li .btn{
+    padding: 0;
+}
+
+/*Estilizanzado aba menu e botões*/
+
+header .menu{
+    margin-top: 160px;
+    height: 15px;
+    background-color: #000000;
+    text-align: center;
+}
+
+header .menu .btn{
+    color: #000000;
+    width: 25%;
+    background-color: #4e4e4e;
+    font-size: 120%;
+    font-family:  Agency FB Bold Condensed;
+    font-weight: bolder;
+    margin: -15px 20px 0 20px;
+}
+
+header .menu .btn:hover{
+    background-color: #5e5b5b;
+    color: #ffffff;
+}
+
+/*menu*/
+header div ul li #sosmenu{
+    width: 100%;
+    background-color: #020d51;
+    margin:  0 auto;
+    float: right;
+    text-align: center;
+    color: #e6e1e1;
+    padding: 15px;
+    font-family: Agency FB Bold Condensed;
+    font-size: 100%;
+}
+
+header #sosmenu:hover{
+    background-color: #021279;
+    color: #ffffff;
+}
+
+header .menuexp{
+    background-color: #4e4e4e;
+    width: 90%;
+    height: 100%;
+    border: none;
+}
+header .btn-group{
+    margin-top: -60px;
+    margin-left: -10px;
+}
+
+header .menuexp ul{
+    width: 101%;
+    margin-top: -2px;
+    margin-left: -0.2%;
+}
+
+header .menuexp ul li{
+    background-color: #4e4e4e;
+    padding: 5px;
+}
+header .menuexp ul li a{
+    display: block;
+    width: 100px;
+    margin: 0  auto;
+}
+
+header .menuexp ul li p{
+    font-size: 100%;
+    margin-left: 1%;
+    color: #e6e1e1;
+    background-color: #4e4e4e;
+}
+
+header .menuexp ul li a img{
+    height: 100px;
+    background-color: #4e4e4e;
+}
+header .menuexp ul li .seta{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #4e4e4e;
+}
+
+header .menuexp ul li .seta:hover{
+    border: 1px solid #ffffff;
+    background-color: #5e5b5b;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+header .menuexp ul li .btn{
+    width: 100%;
+    background-color: #2b2929;
+    font-size: 100%;
+    font-family:  Agency FB Bold Condensed;
+    font-weight: bolder;
+    color: #000;
+}
+
+header .menuexp ul li .btn:hover{
+    background-color: #5e5b5b;
+    color: #ffffff;
+}
+
+.botaozinho img{
+    height: 40px;
+}
+
+/*linha que divide cabeçalho*/
+header .linha{
+    margin-top: 140px;
+    height: 1px;
+    background-color: #000000;
+    text-align: center;
+}
+/*carrossel*/
+.divisoria{
+    width: 100%;
+    height: 1px;
+}
+
+.carrosselsec{
+    padding-top: 205px;
+}
+
+/*estilizando modal*/
+#botaoform{
+    text-align: center;
+}
+
+.botaomodal{
+    width: 70%;
+    background-color: #020d51;
+    margin:  0 100px 0 0;
+    text-align: center;
+    color: #e6e1e1;
+    margin: 0 auto;
+    margin-top: 10px;    
+}
+
+.botaomodal p{
+    font-family: Agency FB Bold Condensed;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.local p{
+    margin-top: 25px;
+}
+
+.botaomodal:hover{
+    background-color: #021279;
+    color: #ffffff;
+}
+
+.titulos{
+    text-align: center;
+    color:#ffffff;
+    text-decoration: underline;
+    font-family: "";
+}
+
+.labels{
+    color: #ffffff;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.links{
+    text-align: center;
+}
+
+.link{
+    font-family: "";
+    font-weight: bolder;
+    color: blue;
+    text-decoration: underline;
+}
+
+.paragrafo{
+    color: #ffffff;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Segunda página*/
+
+.imagem{
+    width: 35%;
+}
+
+.imagemser{
+    width: 40%;
+}
+
+.par{
+    color: white;
+    margin-left:2%;
+    margin-right: 2%;
+}
+
+.par1{
+    text-align: right;
+}
+/*Terceira página*/
+
+.linha7{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+
+}
+.linha7:after
+{
+     content:"";
+     display: block;
+     width: 100px;
+     height: 4px;
+     background-color:white;
+     margin: 5px auto;
+     color: white;
+  }
+
+/*Roda-pé*/
+
+
+
+.item-rod{
+    color: white;
+    font-size: 10pt;
+    list-style-type: none;
+    padding-top: 2%;
+}
+
+.imgroda{
+    width: 20%;
+}
+
+        /* Sticky footer styles
+-------------------------------------------------- */
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to Push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -30px;
+}
+
+/* Set the fixed height of the footer here */
+#Push,
+#footer {
+    height: 30px;
+}
+
+.linha2{
+    margin-top: 140px;
+    height: 14px;
+    background-color: #000000;
+    text-align: center;
+}
+
+.linha2 ul li{
+    margin-top: 10px;
+}
+
+#ModalLongoExemplo{
+    z-index: 100000;
+}
+
+.altresponsivo{
+    height: 80px;
+}

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Logo que vai na aba da guia-->
+    <link rel="sortcut icon" href="Imgs/logopng.png" type="imagens/png" width="16px" height="16px"> 
+
+    <!--Utilizando estilos CSS-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid-layout.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Inserindo java-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/botaotermos.js"></script>
+
+
+    <title>GarageMachine</title>
+  </head>
+  <body class="corpo">
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+      <!--Montar conteúdo entre essa div-->
+
+    <header class="cabecalho align-text-bottom  fixed-top">
+      <!--endereço-->
+        <div class="d-none d-sm-none d-md-block grid-4 end">
+          <ul>
+            <li>
+              Localização
+            </li>
+            <li>
+              Avenida Ciquentenário, 61
+            </li>
+            <li>
+              Campo Limpo - SP
+            </li>
+          </ul>
+        </div>
+        <!--logo-->
+        <div class="img col-sm-1">
+          <a class="grid-4" href="index.html">
+            <img src="Imgs/logopng.png" class="d-inline-block align-center">
+          </a>
+        </div>
+        <!--login-->
+        <div class="login">
+          <a class="grid-4" data-toggle="modal" data-target=".bd-example-modal-lg">
+            <img src="Imgs/User1.png" class="d-inline-block align-center">
+            <p class="d-none d-sm-none d-md-block">Login/Cadastro</p>
+          </a>
+        </div>
+        <!--botão sos-->
+        <button type="button" class="btn btn-lg d-none d-sm-none d-md-block sos"  data-toggle="modal" data-target=".bd-sos-modal-lg">S.O.S 24h</button>
+        <!--pesquisar-->
+        <form class="grid-16 form-group my-2 my-lg-0 d-block">
+          <div class="pesquisar">
+            <ul>
+              <li class="grid-15">
+                <input class="form-control form-control-sm" type="search" placeholder="O que você deseja?">
+              </li>
+              <li class="grid-1">
+                <button class="btn my-2 my-sm-0" type="submit"><img src="imgs/Lupa.png" height="30px"></button>
+              </li>
+            </ul>
+          </div>  
+        </form>
+        <!--menu-->
+          <div class="d-none d-sm-none d-md-block menu container-fluid" >
+            <a role="button" class="glid-1-3 btn btn-sm" href="index.html">Home</a>
+            <a role="button" class="glid-1-3 btn btn-sm"  href="Servicos.html">Serviços</a>
+            <a role="button" class="glid-1-3 btn btn-sm"  href="QuemSomos.html">Quem Somos</a>
+          </div>
+
+          <div class="d-block d-sm-block d-md-none linha container-fluid" >
+          </div>
+
+          <!-- Botão dropright padrão -->
+          <button type="button" class="botaozinho d-block d-sm-block d-md-none btn fixed-top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="imgs/botaoresponsivo.png">
+          </button>
+          <div class="btn-group dropright col-md-1  fixed-top">
+            <div class="dropdown-menu menuexp d-md-none">
+              <ul>
+                <li class="grid-16">
+                  <a href="index.html">
+                    <img src="Imgs/logopng.png"  class="grid-16 d-inline-block align-center">
+                  </a>
+                    <img src="Imgs/setaresp.png" class="seta grid-3 d-inline-block float-right">
+                </li>
+                <li class="grid-16">
+                  <button id="sosmenu" type="button" class="btn btn-lg sos"   data-toggle="modal" data-target=".bd-sos-modal-lg">S.O.S 24h</button>
+                </li>
+                <li  class="grid-16">
+                  <a role="button" class="glid-1-3 btn btn-sm" href="index.html">Home</a>
+                </li>
+                <li  class="grid-16">
+                  <a role="button" class="glid-1-3 btn btn-sm"  href="Servicos.html">Serviços</a>
+                </li>
+                <li  class="grid-16">
+                  <a role="button" class="glid-1-3 btn btn-sm"  href="QuemSomos.html">Quem Somos</a>
+                </li>
+                <li  class="grid-16">
+                  <p>Localização:
+                  Avenida Ciquentenário, 61
+                  Campo Limpo - SP</p>
+                  <p>E-mail: GarageMachine@gmail.com</p>
+                  <p>Cel.: (11) 99999-9999</p>
+                  <p>Cel.: (11) 4444-4444</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </header>
+    <section class="carrosselsec">
+    <!--Carrossel-->
+    <div class="divisoria"></div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 h-100" src="Imgs/banner.png" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="Imgs/banner2.png" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="Imgs/banner3.png" alt="Terceiro Slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </section>
+  <!--Iniciando itens de serviços-->
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-md m-auto div-items">
+          <img src="Imgs/óleo.png" alt="troca de óleo" class="img-fluid">
+          <div class="altresponsivo">
+          <p class="lead paragrafo">
+            Venha fazer uma troca de óleo.
+          </p>
+        </div>
+          <button class="btn botaomodal btn-block mb-3" type="submit"  data-toggle="modal" data-target=".bd-example-modal-lg"><p>Orçar</p></button>
+        </div>
+        <div class="col-md m-auto">
+          <img src="Imgs/Motor.jpg" alt="troca de óleo" class="img-fluid">
+          <div class="altresponsivo">
+          <p class="lead paragrafo">
+            Verificamos o motor de seu carro!
+          </p>
+        </div>
+          <button class="btn botaomodal btn-block mb-3" type="submit"  data-toggle="modal" data-target=".bd-example-modal-lg"><p>Orçar</p></button>
+        </div>
+        <div class="col-md m-auto">
+          <img src="Imgs/pneu.jpg" alt="troca de óleo" class="img-fluid">
+          <div class="altresponsivo">
+          <p class="lead paragrafo">
+            Temos pneus de acordo com sua necessidade!
+          </p>
+        </div>
+          <button class="btn botaomodal btn-block mb-3" type="submit" data-toggle="modal" data-target=".bd-example-modal-lg"><p>Orçar</p></button>
+        </div>
+        <div class="col-md m-auto">
+          <img src="Imgs/lavagem.jpg" alt="troca de óleo" class="img-fluid">
+          <div class="altresponsivo">
+          <p class="lead paragrafo">
+            Efetuado a lavagem completa de seu carro!
+          </p>
+        </div>
+          <button class="btn botaomodal btn-block mb-3" type="submit" data-toggle="modal" data-target=".bd-example-modal-lg"><p>Orçar</p></button>
+        </div>
+        <div class="col-md m-auto">
+          <img src="Imgs/roda.jpg" alt="troca de óleo" class="img-fluid">
+          <div class="altresponsivo">
+          <p class="lead paragrafo">
+            Adquira excelentes rodas conosco!
+          </p>
+        </div>
+          <button class="btn botaomodal btn-block mb-3" type="submit" data-toggle="modal" data-target=".bd-example-modal-lg"><p>Orçar</p></button>
+        </div>
+      </div>
+    </div>
+    <!--Montar conteudo aqui acima-->
+</div>
+
+
+    
+          <div id="Push"></div>
+        </div>
+        <!--roda pé-->
+        <div id="footer">
+          <div class="d-block  linha2 container-fluid" >
+          <div class="container-fluid">
+            <ul class="row">
+                <li class="col-sm item-rod">
+                  <h4>Contatos</h4>
+                   <p class="muted credit">E-mail: GarageMachine@gmail.com</p>
+                   <p class="muted credit">Cel.: (11) 99999-9999</p>
+                   <p class="muted credit">Cel.: (11) 4444-4444</p>
+                </li>
+                 <li class="col-sm item-rod">
+                   <h4>Redes Sociais</h4>
+                    <img class="imgroda" src="Imgs/face.png" alt="facebook">
+                    <img class="imgroda" src="Imgs/insta.png" alt="instagram">
+                    <img class="imgroda" src="Imgs/twitter.png" alt="twitter">
+                </li>
+                 <li class="col-sm item-rod">
+                   <h4>Localização</h4>
+                    <p class="muted credit">Avenida Ciquentenário, 61
+                     Campo Limpo - SP</p>
+                </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+
+
+
+
+<!--Montar conteúdo acima dessa parte-->
+<!--Modal-->
+<!--termos de uso-->
+<div class="modal fade " id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="cadastro">
+      <div class="modal-header border-0">
+        <h5 class="modal-title titulos m-auto" id="TituloModalLongoExemplo">Termos de uso</h5>
+        <button type="button" class="close ml-0" id="termosfechar" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="par">A sua privacidade é importante para nós. É política do respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site , e outros sites que possuímos e operamos.</p>
+
+        <p class="par">Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</p>
+
+        <p class="par">Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</p>
+
+        <p class="par">Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p>
+
+        <p class="par">O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas políticas de privacidade.</p>
+
+        <p class="par">Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.</p>
+
+        <p class="par">O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto connosco.</p>
+      </div>
+      <div id="botaoform">
+        <button class="btn botaomodal btn-lg mb-3" type="submit"><p>Concordo com os termos</p></button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!--esqueci meu...-->
+<div class="modal fade" id="esquecimodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="cadastro col-12">
+        <div class="modal-header border-0">
+          <h5 class="titulos modal-title m-auto" id="ModCenter">BATEU ALZAIMER?</h5>
+          <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Fechar" id="esquecifechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body">
+            <form>
+              <hr class="mb-4">
+              <div class="col-md-16 order-md-1">
+                <form class="needs-validation" novalidate="">
+                  <div class="grid-16 form-group">
+                    <label for="cpf" class="labels">CPF</label>
+                    <input type="text" class="form-control" placeholder="_ _ _ . _ _ _ . _ _ _ / _ _" id="cpf" value="" required="">
+                    <div class="invalid-feedback">
+                      É obrigatório inserir um CPF válido.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="labels">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="fulano@exemplo.com" value="" required="">
+                    <div class="invalid-feedback">
+                      Por favor, insira um endereço de e-mail válido, para atualizações de entrega.
+                    </div>
+                  </div>
+                  <hr class="mb-4">
+                  <button class="btn botaomodal btn-lg btn-block" type="submit"><p>Enviar notificação por e-mail</p></button>
+                </form>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+    <!--SOS-->
+    <div class="modal fade bd-sos-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="cadastro col-12">
+            <div class="modal-header border-0">
+              <h5 class="titulos modal-title m-auto" id="ModCenter">CHAMADO DE EMERGÊNCIA</h5>
+              <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div id="botaoform">
+              <button class="btn botaomodal btn-lg btn-block" type="submit"><p>Compartilhar localização atual</p></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <hr class="mb-4">
+                  <div class="col-md-16 order-md-1">
+                    <h4 class="mb-3 titulos">Endereço da emergência</h4>
+                    <form class="needs-validation" novalidate="">
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                          <label for="primeiroNome" class="labels">Nome</label>
+                          <input type="text" class="form-control" id="primeiroNome" placeholder="Nome" value="" required="">
+                          <div class="invalid-feedback">
+                            É obrigatório inserir um nome válido.
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="sobrenome" class="labels">Sobrenome</label>
+                          <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" value="" required="">
+                          <div class="invalid-feedback">
+                            É obrigatório inserir um sobre nome válido.
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="celular" class="labels">Celular</label>
+                          <input type="text" class="form-control" id="celular" placeholder="(11) 9 9999-9999" value="" required="">
+                          <div class="invalid-feedback">
+                            É obrigatório inserir um telefone válido para contato.
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="celular2" class="labels">Celular <span class="text-muted">(Opcional)</span></label>
+                          <input type="text" class="form-control" id="celular2" placeholder="(11) 9 9999-9999">
+                          <div class="invalid-feedback">
+                          Por favor, inserir um telefone válido para contato.
+                        </div>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="nickname" class="labels">Nickname</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                          </div>
+                          <input type="text" class="form-control" id="nickname" placeholder="Nickname" required="">
+                          <div class="invalid-feedback" style="width: 100%;">
+                            Seu nickname é obrigatório.
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="mb-3">
+                        <label for="email" class="labels">Email <span class="text-muted">(Opcional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="fulano@exemplo.com">
+                        <div class="invalid-feedback">
+                          Por favor, insira um endereço de e-mail válido, para atualizações de entrega.
+                        </div>
+                      </div>
+          
+                      <div class="mb-3">
+                        <label for="endereco" class="labels">Endereço</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Rua dos bobos, nº 0" required="">
+                        <div class="invalid-feedback">
+                          Por favor, insira seu endereço de entrega.
+                        </div>
+                      </div>
+          
+                      <div class="mb-3">
+                        <label for="endereco2" class="labels">Complemento <span class="text-muted">(Opcional)</span></label>
+                        <input type="text" class="form-control" id="endereco2" placeholder="Referência, apartamento, casa..">
+                      </div>
+          
+                      <div class="row">
+                        <div class="col-md-5 mb-3">
+                          <label for="pais" class="labels">País</label>
+                          <select class="custom-select d-block w-100" id="pais" required="">
+                            <option value="">Escolha...</option>
+                            <option>Brasil</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Por favor, escolha um país válido.
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <label for="estado" class="labels">Estado</label>
+                          <select class="custom-select d-block w-100" id="estado" required="">
+                            <option value="">Escolha...</option>
+                            <option>Acre</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Por favor, insira um estado válido.
+                          </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <label for="cep" class="labels">CEP</label>
+                          <input type="text" class="form-control" id="cep" placeholder="00000-000" required="">
+                          <div class="invalid-feedback">
+                            É obrigatório inserir um CEP.
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="mb-4">
+                      <button class="btn botaomodal btn-lg btn-block" type="submit"><p>Enviar chamado</p></button>
+                    </form>
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!--Login-->
+    <div class="modal fade bd-example-modal-lg modal-lancamento" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="row">
+        <div class="cadastro col-12 col-lg-6">
+        <div class="modal-header border-0">
+          <h5 class="titulos modal-title m-auto" id="ModCenter">Já é nosso cliente? Faça seu login...</h5>
+        </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="User" class="labels">Usuário</label>
+                <input type="text" class="form-control" id="user" placeholder="user" value="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir um Usuário válido.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="senhalogin" class="labels">Senha</label>
+                <input type="password" class="form-control" id="senhalogin" placeholder="******" value="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir uma senha válido.
+                </div>
+              </div>
+              <div id="botaoform">
+                <button class="btn botaomodal btn-lg" type="submit"><p>Login</p></button>
+              </div>
+              <div class="grid-16 links">
+              <a  href="#" class="link esqueci">Esqueci meu usuário...</a></br>
+              <a  href="#" class="link esqueci">Esqueci minha senha...</a>
+              </div>
+              <h5 class="titulos modal-title" id="ModCenter">Se preferir acesse com...</h5>
+              <div id="botaoform">
+              <button class="btn botaomodal btn-lg" type="submit"><p>Facebook</p></button>
+              <button class="btn botaomodal btn-lg" type="submit"><p>Twitter</p></button>
+              </div>
+            </form>
+          </div>
+      </div>
+      <!--Cadastro-->
+      <div class="cadastro  col-12 col-lg-6">
+        <div class="modal-header border-0">
+          <h5 class="titulos modal-title m-auto" id="ModCenter">É cliente novo? cadastre-se...</h5>
+          <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Fechar" id="loginfechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="nomecadastro" class="labels">Nome</label>
+                <input type="text" class="form-control" placeholder="Seu nome" id="nomecadastro" value="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir um nome válido.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="emailcadastro" class="labels">E-mail</label>
+                <input type="email" class="form-control" placeholder="Seu e-mail" id="emailcadastro" value="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir um e-mail válido.
+                </div>
+              </div>
+              <div class="grid-8 form-group">
+                <label  for="usercadastro"  class="labels">Usuário</label>
+                <input type="text" class="form-control" placeholder="Nome de usuário" id="usercadastro" value="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir uma usuário válido.
+                </div>
+              </div>
+              <div class="grid-8 form-group">
+                <label for="cpf" class="labels">CPF</label>
+                <input type="text" class="form-control" placeholder="_ _ _ . _ _ _ . _ _ _ / _ _" id="cpf" value="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir um CPF válido.
+                </div>
+              </div>
+              <div class="grid-8 form-group">
+                <label for="senhacad" class="labels">Senha</label>
+                <input type="password" class="form-control" placeholder="******" id="senhacad" value="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir uma senha válida.
+                </div>
+              </div>
+              <div class="grid-8 form-group">
+                <label for="senhacadconf" class="labels">Confirmar senha</label>
+                <input type="password" class="form-control" placeholder="******" id="senhacadconf" value="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir uma senha válida.
+                </div>
+              </div>
+              <div class="grid-8 form-group">
+                <label for="tel" class="labels">Telefone</label>
+                <input type="text" class="form-control" placeholder="( _ _ ) _ _ _ _ - _ _ _ _" id="tel" value="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir uma senha válido.
+                </div>
+              </div>
+              <div class="grid-8 form-group">
+                <label for="datadenasc" class="labels">Data de nascimento</label>
+                <input type="text" class="form-control" placeholder="_ _ / _ _ / _ _" id="datadenasc" value="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir uma senha válido.
+                </div>
+              </div>
+              <div class="row form-group">
+                <label class="grid-16 labels">Sexo</label>
+                <div class="form-check col">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Masculino
+                  </label>
+                </div>
+                <div class="form-check col">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Feminino
+                  </label>
+                </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label labels" for="defaultCheck1">
+                  Deseja receber promoções via e-mail?
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" required>
+                <label class="form-check-label labels" for="defaultCheck2">
+                  Concordo com os <a href="#" class="link" id="termos">Termos de uso.</a>
+                </label>
+                <div class="invalid-feedback">
+                  É obrigatório concordar com os termos.
+                </div>
+              </div>
+              <button class="btn botaomodal btn-lg" type="submit"><p>Cadastro</p></button>
+            </form>
+          </div>
+      </div>
+      </div>  
+      </div>
+    </div>
+  </div> 
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
